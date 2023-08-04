@@ -2,23 +2,23 @@
     background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
   }
   
-  .bicicletas {
+.bicicletas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+}
   
-  .bicicletas-imagem {
+.bicicletas-imagem {
     display: grid;
-  }
+}
   
-  .bicicletas-imagem img {
+.bicicletas-imagem img {
     grid-area: 1/1;
-  }
+}
   
-  .bicicletas-imagem span {
+.bicicletas-imagem span {
     grid-area: 1/1;
     place-self: start end;
     margin-top: 20px;
@@ -26,56 +26,56 @@
     display: inline-block;
     padding: 8px 16px 8px 8px;
     border-radius: 4px 0 0 4px;
-  }
+}
   
-  .bicicletas-conteudo {
+.bicicletas-conteudo {
     display: grid;
     grid-template-columns: 1fr auto;
     align-content: start;
-  }
+}
   
-  .bicicletas h2,
-  .bicicletas p {
+.bicicletas h2,
+.bicicletas p {
     grid-column: 1/-1;
-  }
+}
   
-  .bicicletas h2 {
+.bicicletas h2 {
     margin-bottom: 20px;
-  }
+}
   
-  .bicicletas h2::before {
+.bicicletas h2::before {
     content: "";
     display: block;
     width: 12px;
     height: 8px;
     background-color: var(--cor-p1);
     margin-bottom: 8px;
-  }
+}
   
-  .bicicletas p {
+.bicicletas p {
     margin-bottom: 32px;
-  }
+}
   
-  .bicicletas a {
+.bicicletas a {
     place-self: end;
-  }
+}
   
-  .bicicletas li {
+.bicicletas li {
     display: flex;
     align-items: center;
-  }
+}
   
-  .bicicletas ul {
+.bicicletas ul {
     display: grid;
     gap: 16px;
-  }
+}
   
-  .bicicletas-conteudo img {
+.bicicletas-conteudo img {
     width: 24px;
     margin-right: 8px;
-  }
+}
   
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
     .bicicletas-bg {
       background: var(--cor-11);
     }
@@ -85,9 +85,9 @@
       padding-top: 40px;
       padding-bottom: 40px;
     }
-  }
+}
   
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .bicicletas-conteudo {
       grid-template-columns: 1fr;
     }
@@ -99,5 +99,5 @@
     .bicicletas a {
       place-self: start;
     }
-  }
+}
   
